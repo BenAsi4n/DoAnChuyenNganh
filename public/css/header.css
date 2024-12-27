@@ -1,0 +1,126 @@
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .container {
+  min-height: 65px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links > li {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.nav-links > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  color: #141616;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 6px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000c6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1;
+}
+
+.nav-links > li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.submenu a:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.search-container input {
+  /* padding: 0.5rem; */
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem; /* thêm khoảng trống bên phải cho nút */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-left: 1rem;
+}
+
+.icon-button:hover {
+  color: #007bff;
+}
+.search-container button {
+  position: absolute;
+  right: 20px; /* đặt nút vào bên trong ô input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
